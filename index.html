@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>    
+    <div id="scope">
+    <header>
+        <div class="Cabecalho">
+            <h1 class="sualista">Sua Lista de Tarefas Online</h1>
+        </div>
+        <div class="menu">
+            <div class="divbotoes">
+            <ul class="menu2">
+                <li id="add" onclick="addList()">Adicionar Tarefa</li>
+                <li id="remove" onclick="rmvList()">Limpar Lista</li>
+                <li id="save" onclick="savelist()">Salvar Minha Lista</li>
+            </ul>
+            </div>
+            <div id="divinput">
+                <input id="cont" type="text" onfocus="this.value=''" placeholder="Digite Sua Tarefa Aqui">
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="largebody">
+            <div id="mylist">
+                <h2>Minhas Tarefas</h2>
+                <ol id="list">
+                    
+                </ol>
+                <p id="obs">OBS:Não esqueça de salvar a lista após a remoção de uma tarefa.</p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer id="rodape">
+        <div class="footerr">
+            <p>Photo by <a href="https://unsplash.com/@ryanancill?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryan Ancill</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> - Site Desenvolvido por Claudio
+            </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
